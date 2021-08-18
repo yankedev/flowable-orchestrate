@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.6</version>
+    </parent>
+
+    <artifactId>flowable-spring-boot-sample-core-rest</artifactId>
+
+
+    <properties>
+        <liquibase.skip>false</liquibase.skip>
+        <flowable.version>3.9.3</flowable.version>
+        <mariadb.version>2.7.3</mariadb.version>
+    </properties>
+
+    <dependencies>
+	<dependency>
+	    <groupId>com.oracle.ojdbc</groupId>
+	    <artifactId>ojdbc8</artifactId>
+            <version>19.3.0.0</version>
+            <scope>runtime</scope>
+        </dependency>   
+           <dependency>
+           <groupId>org.apache.tomcat</groupId>
+           <artifactId>tomcat-jdbc</artifactId>
+           <version>${tomcat.version}</version>
+        </dependency>
+	 <dependency>
+            <groupId>com.flowable.core</groupId>
+            <artifactId>flowable-spring-boot-starter-core-rest</artifactId>
+            <version>${flowable.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.flowable.core</groupId>
+            <artifactId>flowable-core-reporting-rest</artifactId>
+            <version>${flowable.version}</version>
+       </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client</artifactId>
+            <version>${mariadb.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>flowable-orchestrate</finalName>
+	<plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <executable>true</executable>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
