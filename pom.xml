@@ -39,6 +39,18 @@
             <version>${flowable.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.flowable.inspect</groupId>
+            <artifactId>flowable-spring-boot-starter-inspect-rest</artifactId>
+        </dependency>
+
+        <!-- Flowable Actuators -->
+        <!-- ================== -->
+        <dependency>
+            <groupId>com.flowable.platform</groupId>
+            <artifactId>flowable-spring-boot-starter-platform-actuator</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>com.flowable.core</groupId>
             <artifactId>flowable-core-reporting-rest</artifactId>
             <version>${flowable.version}</version>
@@ -57,10 +69,27 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+   <dependencyManagement>
+        <dependencies>
+            <!-- Imports the bill-of-materials POM. -->
+            <dependency>
+                <groupId>com.flowable</groupId>
+                <artifactId>flowable-platform-bom</artifactId>
+                <version>${flowable.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <finalName>flowable-orchestrate</finalName>
