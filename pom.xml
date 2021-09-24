@@ -32,10 +32,10 @@
 
         <!-- Flowable Frontend -->
         <!-- ================= -->
-        <dependency>
+        <!--dependency>
             <groupId>com.flowable.work</groupId>
             <artifactId>flowable-work-frontend</artifactId>
-        </dependency>
+        </dependency-->
         <dependency>
             <groupId>com.flowable.platform</groupId>
             <artifactId>flowable-spring-boot-starter-platform-rest</artifactId>
@@ -101,6 +101,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <executable>true</executable>
+                    <fork>false</fork>
                 </configuration>
                 <executions>
                     <execution>
