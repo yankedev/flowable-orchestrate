@@ -13,6 +13,7 @@ RUN groupadd --gid 1000 internal \
 COPY --chown=internal:internal target/flowable*.jar ./app.jar
 COPY --chown=internal:internal entrypoint.sh ./entrypoint.sh
 
+USER internal
 RUN chmod +x ./entrypoint.sh
 
 ENTRYPOINT [ "./entrypoint.sh" ]
