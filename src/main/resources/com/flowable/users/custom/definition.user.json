@@ -1,0 +1,53 @@
+[
+  {
+    "key": "admin",
+    "name": "Flowable Administration User",
+    "forms": {
+      "init": "F01_userInitFormDefault",
+      "view": "F02_userViewFormDefault",
+      "edit": "F03_userEditFormDefault"
+    },
+    "allowedFeatures": [
+      "cases",
+      "changeContactPassword",
+      "changeOwnPassword",
+      "contacts",
+      "createUser",
+      "createWork",
+      "editContactAvatar",
+      "editOwnAvatar",
+      "processes",
+      "reports",
+      "reportsMetrics",
+      "tasks",
+      "templateManagement",
+      "websockets",
+      "work",
+      "actuators",
+      "user-mgmt"
+    ]
+  },
+  {
+    "key": "modeler",
+    "name": "Flowable Design Modeler",
+    "allowedFeatures": [
+      "cases",
+      "changeContactPassword",
+      "changeOwnPassword",
+      "contacts",
+      "createUser",
+      "createWork",
+      "editContactAvatar",
+      "editOwnAvatar",
+      "processes",
+      "reports",
+      "reportsMetrics",
+      "tasks",
+      "templateManagement",
+      "websockets",
+      "work",
+      "actuators",
+      "user-mgmt"
+    ]
+  }
+]

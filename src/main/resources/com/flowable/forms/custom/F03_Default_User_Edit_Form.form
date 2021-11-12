@@ -1,0 +1,58 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "isRequired": true,
+          "ignored": false,
+          "visible": true,
+          "size": 6,
+          "id": "cloud-text2",
+          "label": "First name",
+          "type": "text",
+          "value": "{{firstName}}",
+          "editable": true,
+          "i18n": { "en_us": { "label": "First name" } }
+        },
+        {
+          "isRequired": true,
+          "ignored": false,
+          "visible": true,
+          "size": 6,
+          "id": "cloud-text3",
+          "label": "Last name",
+          "type": "text",
+          "value": "{{lastName}}",
+          "editable": true,
+          "i18n": { "en_us": { "label": "Last name" } }
+        }
+      ]
+    },
+      {
+        "cols": [
+          {
+            "isRequired": false,
+            "visible": true,
+            "size": 6,
+            "ignore": false,
+            "id": "cloud-text5",
+            "label": "Mail",
+            "type": "text",
+            "value": "{{email}}",
+            "editable": true,
+            "i18n": {
+              "en_us": {
+                "label": "Mail"
+              }
+            }
+          }
+        ]
+      }
+  ],
+  "metadata": {
+    "key": "F03_userEditFormDefault",
+    "name": "F03 - Default User Edit Form",
+    "description": "",
+    "version": "1"
+  }
+}

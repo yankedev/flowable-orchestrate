@@ -1,0 +1,138 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "isRequired": "{{true}}",
+          "ignored": false,
+          "visible": true,
+          "size": 12,
+          "id": "cloud-text1",
+          "label": "Display name",
+          "type": "text",
+          "value": "{{displayName}}",
+          "enabled": true,
+          "i18n": {
+            "en_us": {
+              "label": "Display name"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "isRequired": "{{true}}",
+          "ignored": false,
+          "visible": true,
+          "size": 6,
+          "id": "cloud-text2",
+          "label": "First name",
+          "type": "text",
+          "value": "{{firstName}}",
+          "enabled": true,
+          "i18n": {
+            "en_us": {
+              "label": "First name"
+            }
+          }
+        },
+        {
+          "isRequired": "{{true}}",
+          "ignored": false,
+          "visible": true,
+          "size": 6,
+          "id": "cloud-text3",
+          "label": "Last name",
+          "type": "text",
+          "value": "{{lastName}}",
+          "enabled": true,
+          "i18n": {
+            "en_us": {
+              "label": "Last name"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "isRequired": "{{true}}",
+          "ignored": false,
+          "visible": true,
+          "size": 6,
+          "id": "cloud-text4",
+          "label": "Login name",
+          "type": "text",
+          "value": "{{loginName}}",
+          "enabled": true,
+          "i18n": {
+            "en_us": {
+              "label": "Login name"
+            }
+          }
+        },
+        {
+          "isRequired": "{{true}}",
+          "ignored": false,
+          "visible": true,
+          "size": 6,
+          "id": "cloud-text5",
+          "label": "Email",
+          "type": "text",
+          "value": "{{email}}",
+          "enabled": true,
+          "i18n": {
+            "en_us": {
+              "label": "Email"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "isRequired": "{{true}}",
+          "ignored": false,
+          "visible": true,
+          "size": 6,
+          "id": "cloud-password1",
+          "label": "Password",
+          "type": "password",
+          "value": "{{password}}",
+          "enabled": true,
+          "i18n": {
+            "en_us": {
+              "label": "Password"
+            }
+          }
+        },
+        {
+          "isRequired": "{{true}}",
+          "ignored": false,
+          "visible": true,
+          "size": 6,
+          "id": "cloud-password2",
+          "label": "Repeat password",
+          "type": "password",
+          "value": "{{repeatPassword}}",
+          "enabled": true,
+          "i18n": {
+            "en_us": {
+              "label": "Repeat password"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "F01_userInitFormDefault",
+    "name": "F01 - Default User Init Form",
+    "description": "Please add all necessary information to create a new user.",
+    "version": "1"
+  }
+}
