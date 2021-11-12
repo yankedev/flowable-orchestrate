@@ -7,6 +7,9 @@
       "view": "F02_userViewFormDefault",
       "edit": "F03_userEditFormDefault"
     },
+    "memberGroups": [
+      "access-modeler"
+    ],
     "allowedFeatures": [
       "cases",
       "changeContactPassword",
@@ -30,6 +33,14 @@
   {
     "key": "modeler",
     "name": "Flowable Design Modeler",
+    "forms": {
+      "init": "F01_userInitFormDefault",
+      "view": "F02_userViewFormDefault",
+      "edit": "F03_userEditFormDefault"
+    },
+    "memberGroups": [
+      "access-modeler"
+    ],
     "allowedFeatures": [
       "cases",
       "changeContactPassword",
