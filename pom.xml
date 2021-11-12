@@ -44,10 +44,12 @@
         
         <!-- Flowable Actuators -->
         <!-- ================== -->
+
         <dependency>
             <groupId>com.flowable.core</groupId>
             <artifactId>flowable-core-reporting-rest</artifactId>
         </dependency>
+
         <!--dependency>
             <groupId>org.mariadb.jdbc</groupId>
             <artifactId>mariadb-java-client</artifactId>
@@ -56,10 +58,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-        <!--dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
-        </dependency-->
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
