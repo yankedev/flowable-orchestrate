@@ -21,13 +21,13 @@ import org.springframework.security.web.authentication.RememberMeServices;
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Autowired
     protected ObjectProvider<RememberMeServices> rememberMeServicesObjectProvider;
-
+/*
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication().passwordEncoder(NoOpPasswordEncoder.getInstance())
                 .withUser("admin").password("test").authorities("GROUP_flowableAdministrator");
     }
-
+*/
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http

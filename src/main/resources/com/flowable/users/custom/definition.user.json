@@ -8,7 +8,8 @@
       "edit": "F03_userEditFormDefault"
     },
     "memberGroups": [
-      "access-modeler"
+      "access-modeler",
+      "flowableAdministrator"
     ],
     "allowedFeatures": [
       "cases",
